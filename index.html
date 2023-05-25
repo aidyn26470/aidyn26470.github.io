@@ -5,92 +5,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boxes</title>
+    <title>All About Aidyn</title>
 
     <style>
-        #centerBox {
-            border-width: 5px;
-            border-style: solid;
-            border-color: #333333;
-            background-color: sandybrown;
-            margin: auto;
-            width: 25%;
-            padding: 10px;
-            overflow: auto;
-            border-radius: 0px 6px 0px 6px;
-        }
-
         h1 {
             text-align: center;
             font-family: Comic Sans MS;
-        }
-
-        .blogBox {
-            margin: 5px;
+            border-width: 3px;
+            border-style: solid;
+            border-color: #333333;
+            background-color: lightcoral;
+            margin: auto;
+            width: 70%;
             padding: 5px;
-            border: 1px solid black;
-            background-color: aqua;
-            box-shadow: 2px 2px;
-            font-family: Comic Sans MS;
+            box-shadow: 3px 3px 3px;
+            text-shadow: 1px 2px;
+            color: aliceblue;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #centerBox {
+            border-width: 3px;
+            border-style: solid;
+            border-color: #4900be;
+            background-color: gray;
+            margin: auto;
+            width: 70%;
+            padding: 5px;
             overflow: auto;
-        }
-
-
-        .blogBox p {
-            text-align: middle;
-        }
-
-        .blogBox img {
-            float: left;
-            max-width: 200px;
+            box-shadow: 3px 3px 3px #4900be;
+            text-align: justify;
         }
 
         /* Use a media query to add a breakpoint at 800px: */
         @media screen and (max-width: 450px) {
-            .blogBox img {
+            #centerBox {
+                border-width: 3px;
+                border-style: solid;
+                border-color: #333333;
                 float: none;
                 max-width: none;
-                width: 100%;
+                width: 70%;
+                box-shadow: 3px 3px 3px #4900be;
             }
         }
-            /* Use a media query to add a breakpoint at 800px: */
-            @media screen and (max-width: 450px) {
-                #centerBox {
-                    border-width: 0px;
-                    border-style: solid;
-                    border-color: #333333;
-                    float: none;
-                    max-width: none;
-                    width: 100%;
-                }
-            }
+
+        #quickLinks {
+            border-width: 3px;
+            border-style: solid;
+            border-color: #4900be;
+            background-color: gray;
+            margin: auto;
+            width: 70%;
+            padding: 5px;
+            overflow: auto;
+            box-shadow: 3px 3px 3px #4900be;
+        }
+
+        #myGame {
+            text-align: center;
+        }
+
+        #page2 {
+            float:right;
+        }
+
+        .imgIT {
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
     </style>
+
 </head>
 
 <body>
+    <h1 id="Opening Title">Hello, welcome to my website that I've made about me!</h1>
+
     <div id="centerBox">
-        <h1>#1 Victory Royale</h1>
-        <div class="blogBox">
-            <h2>Blog Post Title</h2>
-            <img src="box.jpg">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum dapibus massa. Nunc sodales
-                scelerisque dolor sit amet volutpat. Aliquam convallis faucibus eros. In eget ultricies nibh. Morbi
-                metus mi, congue efficitur arcu id, aliquet porta orci. Morbi ante nulla, accumsan sit amet turpis ut,
-                mattis pulvinar sapien. Suspendisse tincidunt ipsum non fringilla commodo. Nulla blandit fringilla
-                feugiat. Vivamus at justo eget arcu venenatis vehicula. Sed massa justo, vulputate ut mauris sit amet,
-                commodo viverra massa. Donec dignissim ligula justo, vitae laoreet mauris porta blandit.</p>
-        </div>
-        <div class="blogBox">
-            <h2>Blog Post Title</h2>
-            <img src="box.jpg">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum dapibus massa. Nunc sodales
-                scelerisque dolor sit amet volutpat. Aliquam convallis faucibus eros. In eget ultricies nibh. Morbi
-                metus mi, congue efficitur arcu id, aliquet porta orci. Morbi ante nulla, accumsan sit amet turpis ut,
-                mattis pulvinar sapien. Suspendisse tincidunt ipsum non fringilla commodo. Nulla blandit fringilla
-                feugiat. Vivamus at justo eget arcu venenatis vehicula. Sed massa justo, vulputate ut mauris sit amet,
-                commodo viverra massa. Donec dignissim ligula justo, vitae laoreet mauris porta blandit.</p>
-        </div>
+        <h2>All about me</h2>
+        <div id="aboutMe"></div>
+        <img src="IT.jpg" class="imgIT" width="250" height="250">
+        <p>
+            Hello my name is Aidyn, I'm 14 turning 15 in June, I'm a Freshman in the IT program at the school "York
+            County School of Technology." Here in the It program we have 4 different type's of clases, we have a
+            Hardware class where it's all about full hands on with computers and how computers work, a Software class
+            were we work on the different software's and how different software works, a Cybersecurity and Networking
+            class that's how we learn about different Cybersecurity attacks and how to defend against them, and
+            Networking that's were we learn about how Wifi and all the different types of networks work, but then also
+            we have programming, that's where we program codes and work on codes and see how different codes effect
+            different things.
+        </p>
     </div>
-</body>      
+    <div id="quickLinks">
+        <li id="myGame">
+            <a href="gamefiles/game.html">My Game</a> </li>
+
+        <li id="page2">
+            <a href="FinalProject2.html">Next Page</a></li>
+    </div>
+
+    </div>
+</body>
+
+</html>
